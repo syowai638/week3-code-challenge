@@ -2,15 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-}
+    background-color: #001f3f; /* Dark blue background */
+    color: #f4f4f9; /* Light text */
+  }
 
 header {
-    text-align: center;
-    background-color: #6b6ba0;
-    color: white;
-    padding: 20px 10px;
+    text-align: left;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 main {
@@ -23,7 +22,8 @@ main {
 #movie-details {
     flex: 2;
     padding: 20px;
-    background-color: white;
+    background-color: #0a0a23;
+    color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -44,7 +44,8 @@ main {
 #movies-list {
     list-style: none;
     padding: 0;
-    background-color: white;
+    background-color: #0d1a26; /* Navy blue */
+    color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     max-height: 400px;
@@ -56,10 +57,12 @@ main {
     padding: 10px;
     cursor: pointer;
     border-bottom: 1px solid #ddd;
+    color: #ffffff
 }
 
 #movies-list li:hover {
     background-color: #f4f4f9;
+    color: #333;
 
 }
 
@@ -109,6 +112,6 @@ button:disabled {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #6161ff;
-    color: white;
+    background-color: #000000;
+  color: #ffffff; 
 }
