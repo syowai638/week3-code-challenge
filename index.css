@@ -4,36 +4,36 @@ body {
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
-  }
-  
-  header {
+}
+
+header {
     text-align: center;
     background-color: #ff6f61;
     color: white;
     padding: 20px 10px;
-  }
-  
-  main {
+}
+
+main {
     display: flex;
     justify-content: space-between;
     margin: 20px;
-  }
-  
-  #movie-details {
+}
+
+#movie-details {
     flex: 2;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  #movie-details img {
+}
+
+#movie-details img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-  }
-  
-  #movies-list {
+}
+
+#movies-list {
     list-style: none;
     padding: 0;
     background-color: white;
@@ -41,35 +41,50 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     max-height: 400px;
     overflow-y: auto;
-  }
-  
-  #movies-list li {
+}
+
+#movies-list li {
     padding: 10px;
     cursor: pointer;
     border-bottom: 1px solid #ddd;
-  }
-  
-  #movies-list li:hover {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#movies-list li:hover {
     background-color: #f4f4f9;
-  }
-  
-  button {
+}
+
+/* Styles for Sold-Out Movies */
+.sold-out {
+    color: gray;
+    text-decoration: line-through;
+    font-style: italic;
+    cursor: not-allowed;
+}
+
+button {
     background-color: #ff6f61;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  button:hover {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
     background-color: #e55a4f;
-  }
-  
-  footer {
+}
+
+/* Sold-Out Button Styling */
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+footer {
     text-align: center;
     padding: 10px;
     background-color: #ff6f61;
     color: white;
-  }
-  
+}
