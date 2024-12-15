@@ -52,8 +52,24 @@ main {
 
 #movies-list li:hover {
     background-color: #f4f4f9;
+
 }
 
+
+.delete-button {
+    margin-left: 10px;
+    background-color: #e55a4f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: #c1463a;
+  }
+  
 /* Styles for Sold-Out Movies */
 .sold-out {
     color: gray;

@@ -21,6 +21,10 @@ Flatdango is a mini web application for purchasing tickets to movies at the Flat
 
 ## Getting Started
 
+- To ensure persistent data storage, the app uses local storage and synchronizes changes with the db.json file. Make sure the JSON Server is running while using the application to ensure API updates are applied successfully.
+
+
+
 1. Clone this repository:
 ```bash
    git clone git@github.com:syowai638/week3-code-challenge.git
@@ -50,6 +54,15 @@ json-server --watch db.json --port 3000
      - Showtime
      - Available Tickets: Calculated as capacity - tickets_sold.
 
+- Inline Editing for Movie Details
+    - Users can double-click on specific movie attributes (e.g., title, description) to edit them.
+    - Pressing "Enter" saves the changes, and the updated details are displayed immediately.
+
+- Persistence with Local Storage
+     - User actions, such as buying tickets or editing movie details, are stored in local storage.
+     - Refreshing the page or restarting the app does not reset the data.
+
+
 ## Movies List Sidebar
 - A list of all available movies is displayed.
 - Clicking on a movie in the list updates the details section with information for the selected movie.
@@ -67,6 +80,24 @@ json-server --watch db.json --port 3000
 
 - Update tickets sold for a movie:
     - PATCH http://localhost:3000/films/:id
+
+## Inline Editing
+- Users can edit the existing movie details directly from the interface.
+- Changes made to the movie details are automatically saved and updated in real time.
+
+## Persistent Data with Local Storage
+- Movie preferences and purchase states are now saved in local storage.
+- Even after refreshing the page or restarting the application, previously updated details remain intact.
+
+## Enhanced User Experience
+- Added visual feedback for successful ticket purchases.
+- Disabled "Buy Ticket" button dynamically when tickets are sold out.
+
+## Additional API Integrations
+- Real-time data synchronization with JSON Server:
+     - Inline edits update the db.json file via PATCH requests.
+     - Ticket purchases are accurately reflected in the database.
+- Added error handling for network issues or server unavailability.
 
 
 ## Folder Structure
